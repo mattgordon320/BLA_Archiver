@@ -77,8 +77,9 @@ class BLA_Archiver
 	###[7, 41, 21, 18, 12, 2005, 0, 352, false, "GMT Standard Time"]
 
 	#Matt's Comments---------------------------------------------------------
-	#I'm completely flummoxed by the above commented line. Could you let me
-	#know what the array signifies? Is it something like time zone formatting?
+	#I won't lie...I'm completely flummoxed by the above commented line. 
+	#Could you let me know what the array signifies? Is it something like 
+	#time zone formatting?
 	#------------------------------------------------------------------------
 
 		t = Time::now.to_a
@@ -101,7 +102,7 @@ class BLA_Archiver
 	# used, and the different time formats. I must ask though, I'm a little thrown
 	# by the use of the (100+t[4]) expression. I'm getting the vague flickers of
 	# meaning, but I can't fully work it out. Time gets converted to an array on
-	# line #84, and then used in that expression, whose output is then converted 
+	# line #85, and then used in that expression, whose output is then converted 
 	# to a string for use in the variable "sfix" on line 94. Could you enlighten
 	# as to the full significance of how that works?
 	#-----------------------------------------------------------------------
@@ -131,6 +132,12 @@ class BLA_Archiver
 		end #if
 	end #def
 
+	#-------------------------------------------------------------------------
+	# So the above block of code tests to see if the file is present, if true,
+	# it copies the file to the specified variable "archname", and then deletes
+	# the temporary file.
+	#-------------------------------------------------------------------------
+
 	###Copy files
 
 	def BLA_Archiver::catname(from,to)
@@ -145,6 +152,13 @@ class BLA_Archiver
 			to
 		end
 	end#def
+
+	#------------------------------------------------------------------------
+	# I'm totally lost on this particular method. Is this method used to store
+	# the before/after locations for the file to be saved, or deal with the 
+	# differences between OSX and Windows systems or character encoding? Or is
+	# it possibly involving concatenating the name of the file itself?
+	#------------------------------------------------------------------------
 
 	###
 	def BLA_Archiver::syscopy(from,to)
@@ -179,6 +193,11 @@ class BLA_Archiver
 		File.chmod(fmode,tpath)
 		ret
 	end#def
+
+	#----------------------------------------------------------------------
+	# This method (I think) is what checks/reads/stores the file size variable,
+	# accesses the system memory (bin?) 
+	#----------------------------------------------------------------------
 
 	###
 
@@ -270,8 +289,15 @@ class BLA_Archiver
 	end#def
 end#class
 
+#--------------------------------------------------------------------
+# So the above method creates the file menu under the "File" menu,
+# and links it to the Archiver.archives method, correct? It then
+# brings the whole class to an end.
+#--------------------------------------------------------------------
+
 ###
-#----Menu-----------------------------------------------------
+
+#Menu---------------------------------------------------------
 if(not file_loaded?(BLA_Archiver))
 	add_separator_to_menu("File")
 	UI.menu("File").add_item("BLA_Archiver"){BLA_Archiver.make}
