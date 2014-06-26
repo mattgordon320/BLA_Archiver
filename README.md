@@ -15,5 +15,6 @@ I'm still very new to both Ruby and writing code. I'm looking for some help in m
 1. Begin writing script using TIG's Archiver as a base. I plan to write it "from scratch" as it were, to learn what everything does.
 2. Modify script to perform actions according to file naming and folder structure consistant with company standards.
 3. Obtain assistance with modules that are out of my learning/familiarity, IE JavaScript, VisualBasic, C, etc...
+4. I'd love at some point to turn this into an interactive archiver, where you can customize naming conventions, file path, maybe have it ZIP to a location as well, but first things' first, I want to get an understanding of scripting in ruby.
 
 ## License
