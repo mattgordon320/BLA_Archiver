@@ -1,6 +1,6 @@
 # _Bassenian | Lagoni Ruby Archiver_
 
-This project is aimed at modifying TIG's Archive.rb to comply with our in-office standards. Required folder structure of models is currently being worked on and determined, and file versions must be automatically saved down.
+This project is aimed at modifying TIG's Archive.rb to comply with our in-office standards. Required folder structure of models is currently being worked on and determined, and file versions can hopefully be saved down to version 8. Nailing down the exact structure of the standards is the other portion of what I'm working on, hopefully it'll be done soon.
 
 ## Comments
 
