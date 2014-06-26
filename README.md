@@ -2,6 +2,10 @@
 
 This project is aimed at modifying TIG's Archive.rb to comply with our in-office standards. Required folder structure of models is currently being worked on and determined, and file versions must be automatically saved down.
 
+## Comments
+
+I've set up the script at the moment to be the same as TIG's script, and I'm simply writing out code blocks to try to grasp what each method does, and roughly how. If this is a terrible way to work, or you see any bad habits to point out, please do. Learning Ruby has been a tough and fitful road so far.
+
 ## Project Setup
 
 I'm still very new to both Ruby and writing code. I'm looking for some help in modifying a ruby to perform tasks I need every day, then planning on rolling it out to all the SketchUp stations around the office.
