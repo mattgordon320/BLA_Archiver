@@ -195,8 +195,9 @@ class BLA_Archiver
 	end#def
 
 	#----------------------------------------------------------------------
-	# This method (I think) is what checks/reads/stores the file size variable,
-	# accesses the system memory (bin?) 
+	# This method (I think) is what checks/reads/stores/copys the file to the
+	# previously written path after checking its size against the maximum
+	# defined earlier, but I'm confused by the bin mode modthod. 
 	#----------------------------------------------------------------------
 
 	###
